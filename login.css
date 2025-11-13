@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.chat::after{
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 18px; /* moves tail slightly to the right */
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #007BFF;
+
+  
+}
+
+body {
+  background-color: #00A8FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-box {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 40px 30px;
+  width: 270px;
+  position: relative;
+  text-align: center;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+.chat{
+  position: absolute;
+  text-align: center;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #007BFF;
+  color: #fff;
+  border-radius:50%;
+  font-weight: bold;
+  padding: 30px 17px;
+  font-size: 14px;
+  height: 100px;
+  width: 100px;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  color: #333333;
+  font-weight: 600;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 15px;
+  border-radius: 35px;
+  
+}
+
+.input-group i {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #B0B0B0;
+  font-size: 16px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: #F3F3F3;
+  font-size: 14px;
+  color: #333;
+  outline: none;
+}
+
+.input-group input::placeholder {
+  color: #B0B0B0;
+}
+
+.signin-btn {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 0;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 5px;
+  transition: 0.3s;
+}
+
+.signin-btn:hover {
+  background-color: #0066CC;
+}
+
+.forgot {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #888;
+  text-decoration: none;
+}
+.forgot:hover{
+  text-decoration: underline blue;
+}
+
+.text-section {
+  color: #fff;
+  max-width: 400px;
+  margin-left: 40px;
+}
+
+.text-section h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.text-section p {
+  font-size: 14px;
+  line-height: 1.6;
+}
